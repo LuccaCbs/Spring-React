@@ -1,0 +1,40 @@
+Spring-React v2:
+
+SPRING (Back-End):
+.Controllers:
+	-Employee Controller:
+	Add a "POST" method called "/createEmployee"at the 
+	REST api that receives a JSON object as a @RequestBody
+	param and saves it at the DB.
+
+REACT (Front-End):
+
+.Components:
+
+	New Components:
+		."HeaderComponent"
+		."CreateEmployeeComponent"
+		."FooterComponent"
+
+
+	-App:
+	Import "react-router-dom v5.2.0" to create routes and
+	switch them at the render.
+
+	-ListEmployeeComponent:
+	Add a new button that render the page to "/add-employee"
+	view.
+
+	-HeaderComponent:
+	Contains a navbar.
+
+	-FooterComponent:
+	Contains a footer.
+
+	-CreateEmployeeComponent:
+	A new view that contains a form to add a new employee.
+	The from sends the JSON object to the REST api using
+	"axios.post" method through the "EmployeeService" class.
+
+
+

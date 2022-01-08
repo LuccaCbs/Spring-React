@@ -22,6 +22,12 @@ public class EmployeeController {
     public List<Employee> getAllEmployees(){
         return employeeRepository.findAll();
     }
+
+    //create employee rest api
+    @PostMapping("/createEmployee")
+    public Employee createEmployee (@RequestBody Employee employee){
+        return employeeRepository.save(employee);
+    }
     
     
 }
